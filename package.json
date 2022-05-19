@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "Node",
@@ -22,6 +22,10 @@
     "express-handlebars": "^6.0.6",
     "express-openid-connect": "^2.7.2",
     "express-router": "^0.0.1",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
   }
 }

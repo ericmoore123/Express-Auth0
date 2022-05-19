@@ -1,3 +1,17 @@
-<h1>{{message}}</h1>
-<p>User Data:</p>
-<p>{{userData}}</p>
+
+<div class="row">
+    <div class="user-aside content">
+        <p class="user-login-status"><strong>{{loginMessage}}</strong></p>
+        {{#if loggedIn}}
+        <img class="user-img" src={{userData.picture}} alt="User profile image">
+        <ul>
+            <li><strong class="user-list-bold">Name:</strong> {{userData.nickname}}</li>
+            <li><strong class="user-list-bold">Email:</strong> {{userData.email}}</li>
+            <li><strong class="user-list-bold">Verified user:</strong> {{userData.email_verified}}</li>
+        </ul>
+        {{/if}}
+    </div>
+    <div class="main-content content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, hic!</p>
+    </div>
+</div>
